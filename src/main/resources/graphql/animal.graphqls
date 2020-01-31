@@ -1,0 +1,29 @@
+input AnimalInput {
+    name: String!
+    owner: Int
+    species: Int!
+}
+
+type Animal {
+    id: ID
+    species: Species
+    owner: Person
+    name: String
+}
+
+type AnimalQuery {
+    byId (id: Int!): Animal
+    all: [Animal]
+}
+
+type AnimalMutation {
+    new (animal: AnimalInput!): Animal
+}
+
+extend type Query {
+    animal: AnimalQuery
+}
+
+extend type Mutation {
+    animal: AnimalMutation
+}

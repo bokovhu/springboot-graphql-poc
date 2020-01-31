@@ -1,0 +1,28 @@
+input SpeciesInput {
+    name: String!
+    parent: Int
+}
+
+type Species {
+    id: ID
+    parent: Species
+    subSpecies: [Species]
+    name: String
+}
+
+type SpeciesQuery {
+    byId (id: Int!): Species
+    all: [Species]
+}
+
+type SpeciesMutation {
+    new (species: SpeciesInput!): Species
+}
+
+extend type Query {
+    species: SpeciesQuery
+}
+
+extend type Mutation {
+    species: SpeciesMutation
+}

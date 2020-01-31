@@ -1,0 +1,20 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    server: ServerQuery
+}
+
+type Mutation {
+    server: ServerMutation
+}
+
+type ServerQuery {
+    info: String
+}
+
+type ServerMutation {
+    test: String
+}

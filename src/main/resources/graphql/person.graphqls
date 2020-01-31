@@ -1,0 +1,42 @@
+type Person {
+    id: ID
+    name: String
+    email: String
+    address: Address
+    pets: [Animal]
+}
+
+input AddressInput {
+    country: String!
+    settlement: String!
+    streetAddress: String!
+}
+
+input PersonInput {
+    name: String!
+    email: String!
+    address: AddressInput!
+}
+
+type Address {
+    country: String
+    settlement: String
+    streetAddress: String
+}
+
+type PersonQuery {
+    byId (id: Int): Person
+    all: [Person]
+}
+
+type PersonMutation {
+    new (person: PersonInput): Person
+}
+
+extend type Query {
+    person: PersonQuery
+}
+
+extend type Mutation {
+    person: PersonMutation
+}
