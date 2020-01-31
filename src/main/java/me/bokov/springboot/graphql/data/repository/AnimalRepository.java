@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface AnimalRepository extends JpaRepository <Animal, Long> {
+public interface AnimalRepository extends JpaRepository<Animal, Long> {
 
-    List <Animal> findAllByOwner_Id(Long ownerId);
+    List<Animal> findAllByOwner_Id (Long ownerId);
 
 }

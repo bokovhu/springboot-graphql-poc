@@ -1,6 +1,5 @@
 package me.bokov.springboot.graphql.gql.mutation;
 
-import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLResolver;
 import me.bokov.springboot.graphql.data.entity.Address;
 import me.bokov.springboot.graphql.data.entity.Person;
@@ -14,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Component
 @Transactional
-public class PersonMutation implements GraphQLResolver <PersonMutation> {
+public class PersonMutation implements GraphQLResolver<PersonMutation> {
 
     @Autowired
     private PersonRepository personRepository;

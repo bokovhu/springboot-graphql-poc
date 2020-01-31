@@ -1,8 +1,6 @@
 package me.bokov.springboot.graphql.gql.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLResolver;
-import me.bokov.springboot.graphql.data.entity.Address;
-import me.bokov.springboot.graphql.data.entity.Person;
 import me.bokov.springboot.graphql.data.repository.AnimalRepository;
 import me.bokov.springboot.graphql.data.repository.PersonRepository;
 import me.bokov.springboot.graphql.gql.dto.AddressDTO;

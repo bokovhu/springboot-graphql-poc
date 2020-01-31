@@ -1,12 +1,6 @@
 package me.bokov.springboot.graphql.gql;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
-import me.bokov.springboot.graphql.data.entity.Address;
-import me.bokov.springboot.graphql.data.entity.Person;
-import me.bokov.springboot.graphql.data.repository.PersonRepository;
-import me.bokov.springboot.graphql.gql.dto.PersonDTO;
-import me.bokov.springboot.graphql.gql.dto.PersonInputDTO;
-import me.bokov.springboot.graphql.gql.mapper.PersonToPersonDTO;
 import me.bokov.springboot.graphql.gql.mutation.AnimalMutation;
 import me.bokov.springboot.graphql.gql.mutation.PersonMutation;
 import me.bokov.springboot.graphql.gql.mutation.ServerMutation;

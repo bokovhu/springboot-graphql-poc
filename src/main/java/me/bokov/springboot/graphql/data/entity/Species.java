@@ -24,6 +24,6 @@ public class Species implements Serializable {
     private Species parentSpecies;
 
     @OneToMany (fetch = FetchType.LAZY, mappedBy = "parentSpecies")
-    private List <Species> subSpecies;
+    private List<Species> subSpecies;
 
 }

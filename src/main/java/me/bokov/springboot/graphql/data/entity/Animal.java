@@ -29,10 +29,10 @@ public class Animal implements Serializable {
     private String name;
 
     @OneToMany (fetch = FetchType.LAZY, mappedBy = "animal")
-    private Set <Vaccination> vaccinations;
+    private Set<Vaccination> vaccinations;
 
     @ManyToMany
     @JoinTable
-    private Set <Food> preferredFoods;
+    private Set<Food> preferredFoods;
 
 }

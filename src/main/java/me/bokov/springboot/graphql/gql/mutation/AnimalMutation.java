@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Component
 @Transactional
-public class AnimalMutation implements GraphQLResolver <AnimalMutation> {
+public class AnimalMutation implements GraphQLResolver<AnimalMutation> {
 
     @Autowired
     private AnimalRepository animalRepository;

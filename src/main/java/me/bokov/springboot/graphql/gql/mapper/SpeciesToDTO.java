@@ -5,7 +5,6 @@ import me.bokov.springboot.graphql.gql.dto.SpeciesDTO;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
 import java.util.function.Function;
 
 @Component

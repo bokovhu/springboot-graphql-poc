@@ -10,7 +10,7 @@ import java.util.function.Function;
 
 @Component
 @Transactional
-public class PersonToAddressDTO implements Function <Person, AddressDTO> {
+public class PersonToAddressDTO implements Function<Person, AddressDTO> {
 
     @Override
     public AddressDTO apply (Person person) {

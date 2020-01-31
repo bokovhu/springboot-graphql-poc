@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Component
 @Transactional
-public class SpeciesMutation implements GraphQLResolver <SpeciesMutation> {
+public class SpeciesMutation implements GraphQLResolver<SpeciesMutation> {
 
     @Autowired
     private SpeciesRepository speciesRepository;

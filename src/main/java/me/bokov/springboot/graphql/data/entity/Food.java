@@ -27,6 +27,6 @@ public class Food implements Serializable {
 
     @ManyToMany
     @JoinTable
-    private Set <Animal> preferredByAnimals;
+    private Set<Animal> preferredByAnimals;
 
 }

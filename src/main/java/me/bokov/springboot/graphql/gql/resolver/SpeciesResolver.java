@@ -1,6 +1,5 @@
 package me.bokov.springboot.graphql.gql.resolver;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.coxautodev.graphql.tools.GraphQLResolver;
 import me.bokov.springboot.graphql.data.repository.SpeciesRepository;
 import me.bokov.springboot.graphql.gql.dto.SpeciesDTO;
@@ -9,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 

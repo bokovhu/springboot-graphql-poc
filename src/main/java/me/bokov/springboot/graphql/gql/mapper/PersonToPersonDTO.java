@@ -9,7 +9,7 @@ import java.util.function.Function;
 
 @Component
 @Transactional
-public class PersonToPersonDTO implements Function <Person, PersonDTO> {
+public class PersonToPersonDTO implements Function<Person, PersonDTO> {
 
     @Override
     public PersonDTO apply (Person person) {

@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 @Component
 @Transactional
-public class AnimalQuery implements GraphQLResolver <AnimalQuery> {
+public class AnimalQuery implements GraphQLResolver<AnimalQuery> {
 
     @Autowired
     private AnimalRepository animalRepository;
@@ -27,10 +27,10 @@ public class AnimalQuery implements GraphQLResolver <AnimalQuery> {
         );
     }
 
-    public List <AnimalDTO> getAll () {
+    public List<AnimalDTO> getAll () {
         return animalRepository.findAll ()
                 .stream ().map (animalToAnimalDTO)
-                .collect(Collectors.toList());
+                .collect (Collectors.toList ());
     }
 
 }

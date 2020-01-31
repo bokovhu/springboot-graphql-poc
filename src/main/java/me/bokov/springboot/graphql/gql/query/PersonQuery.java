@@ -1,6 +1,5 @@
 package me.bokov.springboot.graphql.gql.query;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.coxautodev.graphql.tools.GraphQLResolver;
 import me.bokov.springboot.graphql.data.repository.PersonRepository;
 import me.bokov.springboot.graphql.gql.dto.PersonDTO;
@@ -14,7 +13,7 @@ import java.util.stream.Collectors;
 
 @Component
 @Transactional
-public class PersonQuery implements GraphQLResolver <PersonQuery> {
+public class PersonQuery implements GraphQLResolver<PersonQuery> {
 
     @Autowired
     private PersonRepository personRepository;
@@ -28,10 +27,10 @@ public class PersonQuery implements GraphQLResolver <PersonQuery> {
         );
     }
 
-    public List <PersonDTO> getAll () {
+    public List<PersonDTO> getAll () {
         return personRepository.findAll ()
                 .stream ().map (personToPersonDTO)
-                .collect(Collectors.toList());
+                .collect (Collectors.toList ());
     }
 
 }

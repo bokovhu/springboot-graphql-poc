@@ -5,7 +5,6 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Set;
 
@@ -26,7 +25,7 @@ public class Person implements Serializable {
     private String email;
 
     @OneToMany (fetch = FetchType.LAZY, mappedBy = "owner")
-    private Set <Animal> pets;
+    private Set<Animal> pets;
 
     @Embedded
     private Address homeAddress;

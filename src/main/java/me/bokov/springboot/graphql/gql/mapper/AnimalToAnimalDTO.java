@@ -9,7 +9,7 @@ import java.util.function.Function;
 
 @Component
 @Transactional
-public class AnimalToAnimalDTO implements Function <Animal, AnimalDTO> {
+public class AnimalToAnimalDTO implements Function<Animal, AnimalDTO> {
 
     @Override
     public AnimalDTO apply (Animal animal) {
